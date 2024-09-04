@@ -91,3 +91,26 @@ public class primeros {
         System.out.println("Bienvenido, " + nombre);
     }
 }
+
+
+Ejercicio 5:
+
+package oto;
+//import java.util.Scanner;
+//public class nette {
+
+	//public static void main(String[] args) {
+			//Scanner scanner = new Scanner(System.in);
+			
+			//System.out.print("ingrese el radio del circulo: ");
+			//String radioStr = scanner.nextLine();
+			
+			//double radio = Double.parseDouble(radioStr);
+			
+			//double area = Math.PI * Math.pow(radio, 2);
+			
+		//	System.out.println("El area del circulo es: " + area);
+
+	//}
+
+//}
