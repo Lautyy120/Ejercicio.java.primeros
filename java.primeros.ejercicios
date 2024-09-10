@@ -160,15 +160,95 @@ System.out.println(" El numero " + numero + " corresponde al caracter " + caract
 	
 	
 	
-	
-	
-	
-	
-
-	
-	
 wat.close();
+	}
+}
+
+
+ejercicio 8:
+package lata;
+import java.util.Scanner;
+public class topo {
+	public static void main (String[] args) {
+		
+		Scanner wot = new Scanner (System.in);
+		
+		System.out.print ("introduce un caracter: ");
+		
+		char caracter = wot.next().charAt(0);
+		
+		int codigoASCII = (int) caracter;
+		System.out.println("el codigo ASCII DE " + caracter + "es: " + codigoASCII);
+		
+		wot.close();
+	}
+
+}
+
+
+Ejercicio: 9
+
+package lata;
+import java.util.Scanner;
+public class topo {
+	public static void main (String[] args) {
+		
+		Scanner pr = new Scanner(System.in);
+		final double IVA = 0.21;
+		
+		System.out.print("ingrese el precio: ");
+		double precio = pr.nextDouble();
+		
+		double precioFinal = precio + (precio * IVA);
+		System.out.print ("el precio final con impuesto iva es de: " + precioFinal);
+		
+		pr.close();
+		
+		
+	}
+
+}
+ejercicio 10: 
+
+package lata;
+import java.util.Scanner;
+public class topo {
+	public static void main (String[] args) {
+		
+		int numero=90;
+		
+		while (numero<=100){
+			
+			 
+			 System.out.println(numero);
+		
+			numero= numero + 1;
+		}
+	}
+
+		
+		
 	}
 
 
-}
+ejercicio 11:
+
+package lata;
+import java.util.Scanner;
+public class topo {
+	public static void main (String[] args) {
+		
+		for (int numero=1; numero<=100;numero=numero + 1)
+		
+		
+			
+			 
+			 System.out.println(numero);
+		
+			
+		}
+	}
+
+ejercicio 12:
+
+
