@@ -251,4 +251,68 @@ public class topo {
 
 ejercicio 12:
 
+package pata;
+
+public class tapon {
+	
+	public static void main (String[] args) {	
+	
+		int numero = 1;
+		
+		while (numero<=100) {
+			
+			if (numero%2==0 || numero%3==0) {
+				
+				System.out.println("el numero es: " + numero);
+			}
+			
+			numero++;
+		}
+	
+
+}
+}+
+
+
+ejercicio 13:
+
+package pata;
+import java.util.Scanner;
+public class tapon {
+	
+	public static void main (String[] args) {	
+		
+		Scanner ventanas = new Scanner(System.in);
+		
+		
+	System.out.print("cuantas ventanas queres introducir ");
+	int numventanas = ventanas.nextInt();
+	double sumatotal = 0;
+	
+	for(int i = 1; i <=numventanas; i++) {
+		
+		System.out.print("introduce el monto de la venta " + i + ":");
+		double venta  = ventanas.nextDouble();
+	
+	sumatotal += venta;
+	
+	}
+	
+	System.out.println("la suma total  de las ventas es: "+ sumatotal);
+	
+	ventanas.close();
+	
+		
+		}
+	
+
+}
+
+
+
+ejercicio 14:
+
+
+
+
 
