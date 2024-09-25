@@ -359,6 +359,77 @@ public class tapon {
     }
 }
 
+ejercicio 15:
+
+package pata;
+import java.util.Scanner;
+
+public class NumeroPositivo {
+
+    public static void main(String[] args) {
+        Scanner namber = new Scanner(System.in);
+        int numero;
+
+     
+        do {
+            System.out.println("Introduce un número mayor o igual que cero:");
+            numero = namber.nextInt();
+            
+           
+            if (numero < 0) {
+                System.out.println("El número introducido es menor que cero. Inténtalo de nuevo.");
+            }
+
+        } while (numero < 0);
+
+   
+        System.out.println("El número introducido es: " + numero);
+
+       
+        namber.close();
+    }
+}
+ejercicio 16: 
+package pata;
+import java.util.scanner;
+
+public static void main(String[] args) {
+       
+        String contrasenacorrecta = "miContrasenaSecreta";
+
+        
+        Scanner contra = new Scanner(System.in);
+
+        int intentosMaximos = 3;
+        int intentos = 0;
+        boolean acierto = false;
+
+      
+        while (intentos < intentosMaximos && !acierto) {
+            System.out.println("Introduce la contraseña (Intento " + (intentos + 1) + " de 3):");
+            String contrasenaIntroducida = contra.nextLine();
+
+            if (contrasenaIntroducida.equals(contrasenaCorrecta)) {
+                acierto = true;
+                System.out.println("muy bien! Has introducido la contraseña correcta.");
+            } else {
+                intentos++;
+                
+                if (intentos < intentosMaximos) {
+                    System.out.println("Contraseña incorrecta. Inténtalo de nuevo.");
+                }
+            }
+        }
+
+       
+        if (!acierto) {
+            System.out.println("Has agotado todos los intentos. Acceso denegado.");
+        }
+
+       
+        contra.close();
+    }
+}
 
 
 
