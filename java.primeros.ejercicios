@@ -431,6 +431,40 @@ public static void main(String[] args) {
     }
 }
 
+ejercicio 17:
+
+package pata;
+import java.util.Scanner;
+
+public class Dias {
+
+    public static void main(String[] args) {
+        Scanner diass = new Scanner(System.in);
+
+        System.out.println("Introduce un día de la semana (Lunes a Domingo):");
+        String dia = diass.nextLine().toLowerCase(); // Convertimos a minúsculas para evitar problemas con mayúsculas
+
+       
+        switch (dia) {
+            case "lunes":
+            case "martes":
+            case "miercoles":
+            case "jueves":
+            case "viernes":
+                System.out.println(dia + " es un día laboral.");
+                break;
+            case "sabado":
+            case "domingo":
+                System.out.println(dia + " no es un día laboral.");
+                break;
+            default:
+                System.out.println("El día introducido no es válido.");
+                break;
+        }
+
+        diass.close();
+    }
+}
 
 
 
