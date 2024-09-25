@@ -311,6 +311,62 @@ public class tapon {
 
 
 ejercicio 14:
+package pata;
+import java.util.Scanner;
+
+public class tapon {
+
+    public static void main(String[] args) {
+        Scanner mate = new Scanner(System.in);
+
+        System.out.println("Introduce el valor de a:");
+        double a = mate.nextDouble();
+
+        System.out.println("Introduce el valor de b:");
+        double b = mate.nextDouble();
+
+        System.out.println("Introduce el valor de c:");
+        double c = mate.nextDouble();
+
+        // Mensaje de traza: Inicio del cálculo del discriminante
+        System.out.println("Calculando el discriminante...");
+
+        // Calculamos el discriminante
+        double discriminante = b * b - 4 * a * c;
+
+        // Mensaje de traza: Mostrando el valor del discriminante
+        System.out.println("El discriminante es: " + discriminante);
+
+        // Verificamos si el discriminante es mayor o igual a 0
+        if (discriminante >= 0) {
+            // Mensaje de traza: Soluciones reales
+            System.out.println("El discriminante es mayor o igual a 0. Calculando las soluciones...");
+
+           
+            double solucion1 = (-b + Math.sqrt(discriminante)) / (2 * a);
+            double solucion2 = (-b - Math.sqrt(discriminante)) / (2 * a);
+
+            System.out.println("Las soluciones son:");
+            System.out.println("x1 = " + solucion1);
+            System.out.println("x2 = " + solucion2);
+        } else {
+          
+            System.out.println("El discriminante es menor que 0. La ecuación no tiene soluciones reales.");
+        }
+
+
+        mate.close();
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
