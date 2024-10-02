@@ -527,7 +527,7 @@ public class Main {
         enteros.close();
     }
 }
-ejercicio:
+ejercicio 20:
 import java.util.Scanner;
 
 public class Main {
