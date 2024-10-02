@@ -442,7 +442,7 @@ public class Dias {
         Scanner diass = new Scanner(System.in);
 
         System.out.println("Introduce un día de la semana (Lunes a Domingo):");
-        String dia = diass.nextLine().toLowerCase(); // Convertimos a minúsculas para evitar problemas con mayúsculas
+        String dia = diass.nextLine().toLowerCase();
 
        
         switch (dia) {
@@ -463,6 +463,33 @@ public class Dias {
         }
 
         diass.close();
+    }
+}
+
+ejercicio 18:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner num = new Scanner(System.in);
+
+
+        System.out.print("ingresa el primer número: ");
+        int num1 = num.nextInt();
+        System.out.print("ingresa el segundo número: ");
+        int num2 = num.nextInt();
+
+    
+        int min = Math.min(num1, num2);
+        int max = Math.max(num1, num2);
+
+        System.out.println("cargando 10 números aleatorios entre " + min + " y " + max + ":");
+        for (int i = 0; i < 10; i++) {
+            int randomNum = (int)(Math.random() * (max - min + 1)) + min;
+            System.out.println(randomNum);
+        }
+
+        num.close();
     }
 }
 
