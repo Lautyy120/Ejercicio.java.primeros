@@ -493,6 +493,41 @@ public class Main {
     }
 }
 
+ejercicio 19: 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner enteros = new Scanner(System.in);
+        int numero;
+
+      
+        do {
+            System.out.print("ingresa un numero entero positivo: ");
+            while (!enteros.hasNextInt()) {
+                System.out.println("numero invalido. ingresa un número entero positivo.");
+                enteros.next(); 
+            }
+            numero = enteros.nextInt();
+            if (numero <= 0) {
+                System.out.println("el numero debe ser positivo.");
+            }
+        } while (numero <= 0);
+
+       
+        int cifras = String.valueOf(numero).length();
+
+       
+        if (cifras == 1) {
+            System.out.println("El numero tiene 1 cifra.");
+        } else {
+            System.out.println("El numero tiene " + cifras + " cifras.");
+        }
+
+        enteros.close();
+    }
+}
+
 
 
 
