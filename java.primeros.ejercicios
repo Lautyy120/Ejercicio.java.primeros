@@ -627,7 +627,19 @@ public class Main {
 }
 
 
+ejercicio 24: 
+public class Main {
 
+    public static void main(String[] args) {
+        String frase = "la lluvia en sevilla es una maravilla";
+
+        System.out.print("Códigos ASCII: ");
+        for (int i = 0; i < frase.length(); i++) {
+            int codigoAscii = (int) frase.charAt(i); 
+            System.out.print(codigoAscii + " "); 
+        }
+    }
+}
 
 
 
