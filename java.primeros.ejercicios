@@ -612,8 +612,19 @@ public class Main {
 }
 
 
+ejercico 23: 
+public class Main {
 
+    public static void main(String[] args) {
+        String frase = "La lluvia en Sevilla es una maravilla";
 
+        // Reemplazamos 'a' y 'A' por 'e'
+        String nuevaFrase = frase.replace('a', 'e').replace('A', 'e');
+
+        System.out.println("Frase original: " + frase);
+        System.out.println("Frase modificada: " + nuevaFrase);
+    }
+}
 
 
 
